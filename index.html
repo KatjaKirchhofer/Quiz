@@ -7,22 +7,23 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
 </head>
 
-<body>
+<body onload="nextQuestion()">
     <h1>Awesome HTML Quiz </h1>
 
     <div class="card">
-        <div class="card-body">
+        <div class="card-body" id="question">
             <p>In diesem Abschnitt wird eine Frage gestellt!</p>
         </div>
     </div>
 
     <div class="mt-4">
-        <button class="btn btn-primary">Antwort A</button>
-        <button class="btn btn-primary">Antwort B</button>
-        <button class="btn btn-primary">Antwort C</button>
-        <button class="btn btn-primary">Antwort D</button>
+        <button onclick="answer('Lady Gaga')" id="answer1" class="btn btn-primary">Antwort A</button>
+        <button onclick="answer('Robby Williams')" id="answer2" class="btn btn-primary">Antwort B</button>
+        <button onclick="answer('Tim Berners-Lee')" id="answer3" class="btn btn-primary">Antwort C</button>
+        <button onclick="answer('Justin Biber')" id="answer4" class="btn btn-primary">Antwort D</button>
     </div>
 
 
